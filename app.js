@@ -38,7 +38,7 @@ App({
             data: {
               Action: "/Member/WeiBeforeLogin",
               body: JSON.stringify({ "Code":data.code})
-             // key: "ff8DW37J"
+             // key: ""
             },
             success: function (res) {
               console.log(res) //获取openid  
@@ -62,8 +62,8 @@ App({
   },
   globalData:{
     userInfo:null,
-    appid: 'wx2dd647e6aa26e459',
-    secret:'6f2afcca3ad3a2c9058a44c6cdc2c9a0'
+    appid: '',
+    secret:''
 
   },
   getuserLocation:function(){
