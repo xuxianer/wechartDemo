@@ -1,0 +1,33 @@
+<scroll-view scroll-y="false">
+<view class="Nav">
+    <text class="nav {{ingStatus}}" data-status="1" bindtap="orderedtap">进行中的订单</text>
+    <text class="nav {{edStatus}}" data-status="2" bindtap="orderedtap">已完成订单</text>
+  </view>
+</scroll-view>
+<scroll-view scroll-y class="order-list">
+	    <view data-id="{{item.OrderId}}" class="order-list-item" wx:for="{{orderListInfo}}" bindtap="toOrderDetail">
+		    <view class="clearfix">
+		    	<view class="pull-left">
+			    	<text class="OrderTypeName">{{item.OrderInfoName}}</text>
+			    </view>
+			    <text style="margin-right: 15px;color: red;" class="OrderStatusName pull-right">{{item.OrderStatusName}}</text>
+		    </view>
+		    <view class="">
+			    <text style="margin-right: 15px;">用车时间</text>
+			    <text class="StartTime">{{item.StartTime}}</text>
+		    </view>
+		    <view class="orderPice">
+			    ￥{{item.OrderPrice}}
+		    </view>
+		    <view style="margin-top: 10px;">
+		    	<view style="margin-bottom: 15px;" class="OrderInfo">
+		    		<image src="../../images/start_place.png" style="width: 10px;height: 10px;margin-right: 10px;"></image>
+		    		{{item.StartAddress}}
+		    	</view>
+			    <view class="OrderInfo">
+				    <image src="../../images/end_place.png" style="width: 10px;height: 10px;margin-right: 10px;"></image>
+				    {{item.EndAddress}}
+			    </view>
+		    </view>
+	    </view>
+	</scroll-view>

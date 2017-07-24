@@ -1,0 +1,17 @@
+.cancelrule-wrapper {
+	padding: 15px;
+}
+.title {
+	font-weight: bold;
+}
+.content {
+	margin: 20px 0;
+}
+.content view {
+	margin: 0 0 5px 15px;
+}
+
+
+
+
+

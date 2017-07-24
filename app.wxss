@@ -1,0 +1,264 @@
+/**app.wxss**/
+ /**{
+  margin: 0;
+  padding: 0;
+}*/
+
+page{
+  background-color: #f2f2f2;
+}
+.container {
+  min-height:38em;
+  background-color: #F2F2F2;
+  overflow-x: hidden;
+} 
+/**index.wxss**/
+.container{
+  font-family:UICTFontTextStyleBody;
+  padding-bottom: 2em;
+}
+navigator{
+  display: inline-block;
+  margin-left: 20px;
+  padding: 0 .7em;
+  font-size: 18px;
+}
+.Nav{
+height:3em;
+line-height:3em;
+background-color:#fff;
+box-shadow:#999 0 3px 2px -3px;
+padding-bottom:3px;
+display:flex;
+align-items:center;
+justify-content:space-around;
+
+
+}
+.navigator-hover{
+  color: #fff;
+}
+navigator.on{
+  color: #fe6813;
+  border-bottom: 4px solid #fe6813;
+}
+.baseMsgZone{
+  margin-top: 1em;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+.RowDetail{
+  padding: .8em 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  height: 2em;
+  flex-direction:column;
+  justify-content: center;
+  padding-left: 3em;
+}
+input {
+display:inline-block;
+height:1.8em;
+text-overflow:clip;
+overflow:hidden;
+white-space:nowrap;
+font-family:UICTFontTextStyleBody;
+margin-left:.6em;
+margin-top:.2em;
+font-size:18px;
+width: 98%
+
+}
+.baseMsgZone image{
+ float:left;
+  width:1.4em;
+  height:1.4em;
+  margin-top:1.2em;
+  margin-left:1.3em;
+
+
+
+}
+.cancleRule{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #fe6813;
+  margin-top: 1em;
+}
+picker{
+  font-size:18px;
+  color:#999;
+  height:1.8em;
+  line-height:2.5em;
+  display:inline-block;
+  margin-left:.6em;
+
+}
+picker view{
+  height: 1.8em;
+  line-height: 1.8em;
+}
+.searchBtn{
+  width: 80%;
+  color: #fff;
+  background-color:#FE6813; 
+  margin-top:1.8em; 
+}
+.fenge{
+  align-items:center;
+  margin-top:.2em;
+  font-size:1.2em;
+  color:#ccc;
+
+}
+.JSJContent{
+  top:3.3em;
+  bottom: 0em;
+  position: absolute;
+}
+.placeholder{
+  color: #999;
+}
+
+
+/*order*/
+
+.orderDetail-wrapper,.order-list-item{
+  font-size: 15px;
+}
+.show{display: block;}
+.hide{display:none;}
+/*浮动*/
+.pull-left {
+	float: left!important;
+}
+.pull-right {
+	float: right!important;
+}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.on {
+  border-bottom: 3px solid #fe6813;
+}
+
+/*订单列表*/
+/*订单列表-订单类型切换*/
+.orderList-header {
+  height:3em;
+  line-height:3em;
+  background-color:#fff;
+  box-shadow:#999 0 3px 2px -3px;
+  padding-bottom:3px;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+
+}
+.order-tab {
+  height: 3em;
+  line-height: 3em;
+  font-size: 18px;
+}
+/*订单列表-订单列表*/
+.order-list {
+  position: absolute;
+  top: 3.3em;
+  bottom: 0;
+}
+.order-list-item {
+  padding: 0 0 15px 20px;
+  background: #fff;
+  margin: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.order-list-item>view {
+	margin-top: 15px;
+}
+
+/*订单详情*/
+/*订单详情-订单状态*/
+.order-status {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.OrderStatusName {
+	margin-left: 10px;
+}
+/*订单详情-司机*/
+.order-driver {
+	height: 80px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+}
+.PicUrl {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+/*订单详情-订单*/
+.order-detail {
+	padding-left: 20px;
+	margin-bottom: 10px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+  padding-bottom: 1em;
+	background: #fff;
+}
+.order-detail>view {
+	margin-top: 16px;
+}
+.order-detail-text {
+	width: 65px;
+	text-align: right;
+	margin-right: 15px;
+}
+/*订单详情-价格*/
+.order-price {
+	padding-left: 20px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+  padding-bottom: 1em;
+}
+/*订单详情-支付*/
+.order-pay {
+	width: 90%;
+	height: 2.5em;
+	margin: 30px auto 0;
+	text-align: center;
+	line-height: 2.5em;
+	color: #fff;
+	background: #FE6813;
+	border-radius: 4px;
+}
+.order-price view {
+	margin-top: 12px;
+}
+.order-price-text {
+	margin-right: 30px;
+}
+/*订单详情-联系客服，取消订单*/
+.order-bottom {
+	position: fixed;
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}

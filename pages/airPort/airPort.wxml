@@ -1,0 +1,15 @@
+<!--airPort.wxml-->
+<view class="searchAir">
+  <icon type="search"/>
+  <input placeholder="搜索机场" bindinput="searcAirLike"/>
+</view>
+<scroll-view class="scrollv" scroll-y="true">
+<view  wx:for="{{AirportList}}" wx:for-item="item">
+    <view class="First" wx:if="{{item.first}}"> 
+      {{item.first}}
+    </view>
+    <view bindtap="checkAriPort" class="airPortDeatl" wx:for="{{item.airport}}" wx:for-item="item2" data-Lat="{{item2.Lat}}"  data-Lng="{{item2.Lng}}" data-cityAllName="{{item2.CityName}} {{item2.Name}}">
+     {{item2.CityName}}  {{item2.Name}}
+  </view>
+</view>
+</scroll-view>

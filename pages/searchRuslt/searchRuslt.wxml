@@ -1,0 +1,35 @@
+<!--searchRuslt.wxml-->
+<scroll-view class="carstyleList" scroll-x="true">
+   <view class="carStyle" wx:for="{{carList}}" wx:for-item="item" data-VehicleType="{{item.VehicleType}}" bindtap="selectType" data-price="{{item.Price}}">
+     <view class="carImg">
+       <image src="{{item.PicUrl}}"></image>
+     </view>
+     <view class="">
+        <text class="carStyleVN">{{item.VehicleName}}</text>
+     </view>
+     <view class="">
+        <text class="carStylePrice">￥{{item.Price}}</text>
+     </view>
+   </view>
+
+</scroll-view>
+<scroll-view class="carList">
+  <view class="carDetale" wx:for="{{carListBody}}" wx:for-item="item">
+      <view class="carDTitle">
+        {{item.VehicleName}}   <image src="../../images/ic_Models_People@2x.png"></image>≤{{item.MaxSeat}} 人
+         <image src="../../images/ic_Models_Suitcase@2x.png"></image>≤{{item.MaxBags}}件
+      </view>
+      <view class="carDContent">
+          <image src="{{item.PicUrl}}"></image>
+          <text class="carDesc">{{item.VehicleRemark}}</text>
+          <text class="price">￥{{item.Price}}</text>
+      </view>
+  </view>
+  <view class="CouPonList" bindtap="toCouponList">
+     优惠券 <text class="CouponPrice">￥{{CouponPrice}}</text>
+  </view>
+</scroll-view>
+<view class="totlePriceAndSell">
+  <text class="totlePrice">￥{{TotleCost}}</text>
+  <text class="sell" bindtap="pay">预约</text>
+</view>

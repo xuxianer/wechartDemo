@@ -1,0 +1,21 @@
+<!--planeNo.wxml-->
+<form bindsubmit="SearchPlaneform">
+<view class="baseMsgZone">
+ <image src="../../images/ic_Pickup_Calendar@2x.png"></image>
+     <view class="RowDetail">
+      
+       <input name="planeNo" placeholder="请输入航班号" />
+     </view>
+      <image src="../../images/ic_Daily_Time@2x.png"></image>
+     <view class="RowDetail">
+     <view style="flex-direction:row ;display:flex;flex-wrap: nowrap;">  
+       <picker mode="date" style="width:80%;" value="{{date}}" placeholder="请选择日期" name="date" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+       </picker>
+       </view>
+     </view>
+  </view>
+    <button formType="submit" class="searchBtn">查询</button>
+  </form>

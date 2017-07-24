@@ -1,0 +1,37 @@
+/* searchPlaneRes.wxss */
+.vMsg{
+  text-align: center;
+  display: block;
+  font-size:16px; 
+  margin-top: 10px;
+}
+.planeMsgZone{
+  font-size: 16px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: .3em;
+  padding-bottom: .6em;
+  background-color: #fff;
+}
+.planeMsg{
+  display: flex;
+  justify-content:center;
+}
+.Timeto{
+  color:#ccc;
+font-size:26px;
+}
+.compane{
+  font-size: 14px;
+  color: #999;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.planeMsg{
+  margin-top: 1em;
+}
+.planeTime{
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: .4em;
+}

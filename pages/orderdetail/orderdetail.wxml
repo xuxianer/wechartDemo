@@ -1,0 +1,82 @@
+<view class="orderDetail-wrapper">
+	<view class="order-status">
+	    <text class="">订单状态</text>
+	    <text class="OrderStatusName">{{orderDetailInfo.OrderModel.OrderStatusName}}</text>
+	</view>
+	<view class="order-driver clearfix" wx:if="{{driverInfoIsShow}}">
+		<images style="margin: 10px 10px 0 0;" class="PicUrl pull-left" src="{{orderDetailInfo.DriverModel.PicUrl}}"></images>	    
+		<view style="margin-top: 15px;line-height: 24px;" class="pull-left">
+			<view>
+				<text>{{orderDetailInfo.DriverModel.Name}}</text>·
+				<text>{{orderDetailInfo.DriverModel.VehicleNumber}}</text>
+			</view>
+			<text>{{orderDetailInfo.DriverModel.VehicleTypeBrand}}</text>
+		</view>
+		<!--<view style="margin: 30px 10px 0 0;" class="pull-right" bindtap="callDriver">联系司机</view>-->
+	</view>
+	<view class="order-detail">
+	    <view style="margin-top: 20px;" class="clearfix">
+	    	<view class="pull-left clearfix">
+	    		<text class="order-detail-text pull-left">订单类型</text>
+		    	<text class="pull-left">{{orderDetailInfo.OrderModel.WeiChatUserType}}</text>
+	    	</view>
+			<view style="margin-right: 30px;" class="pull-right">
+	    		<text style="margin-right: 15px;" class="pull-left">车型</text>
+		    	<text class="pull-left">{{orderDetailInfo.CarModel.VehicleName}}</text>
+	    	</view>	    
+	    </view>
+	    <view class="clearfix">
+		    <text class="order-detail-text pull-left">用车时间</text>
+		    <text class="pull-left">{{orderDetailInfo.OrderModel.UseTime}}</text>
+	    </view>
+	    <view class="clearfix">
+	    	<text class="order-detail-text pull-left">乘车人</text>
+		    <text class="pull-left">{{orderDetailInfo.UserModel.Mobile}}</text>
+	    </view>
+	    <view>
+	    	<view class="">
+		    	<image src="../../images/start_place.png" style="width: 10px;height: 10px;margin-right: 10px;"></image>
+		    	{{orderDetailInfo.OrderModel.DuseLocationDetailAddress}}
+	    	</view>
+		    <view style="margin-top: 16px;" class="">
+		    	<image src="../../images/end_place.png" style="width: 10px;height: 10px;margin-right: 10px;"></image>
+		    	{{orderDetailInfo.OrderModel.AuseLocationDetailAddress}}
+		    </view>
+	    </view>
+	</view>
+	<view class="order-price">
+		<view>
+			<text class="order-price-text">订单总额</text>
+		    ￥<text class="">{{orderDetailInfo.OrderModel.OrderPrice}}</text>
+		</view>
+		<view>
+			<text class="order-price-text">优惠金额</text>
+		    ￥<text class="">{{orderDetailInfo.CouponModel.CouponPrice}}</text>
+		</view>
+		<view>
+			<text class="order-price-text">实际支付</text>
+		    ￥<text class="">{{orderDetailInfo.OrderModel.PayPrice}}</text>
+		</view>
+	</view>
+	<view class="order-pay" wx:if="{{orderDetailInfo.OrderModel.PayStatus==0}}" bindtap="wxpay">支付</view>
+	<view class="order-bottom clearfix">
+	    <text class="" bindtap="callservice">联系客服</text>
+	    <text wx:if="{{orderDetailInfo.OrderModel.OrderStatus==1}}" class="">|</text>
+	    <text wx:if="{{orderDetailInfo.OrderModel.OrderStatus==1}}" class="" bindtap="cancelorder">取消订单</text>
+	</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

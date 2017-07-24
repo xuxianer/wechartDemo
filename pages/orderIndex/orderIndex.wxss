@@ -1,0 +1,13 @@
+/* pages/orderIndex/orderIndex.wxss */
+
+.nav{
+  font-size:18px;
+  padding:1px 1em;
+}
+.orderPice{
+  float: right;
+  margin-right: 1em;
+} 
+.OrderTypeName{
+  font-size: 20px;
+}

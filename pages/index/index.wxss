@@ -1,0 +1,17 @@
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.nav{
+  font-size:18px;
+  padding:1px 1em;
+
+} 
+page{
+  height: 100%;
+}
+.indexView{
+  height: 100%;
+}

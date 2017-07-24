@@ -1,0 +1,19 @@
+<!--searchPlaneRes.wxml-->
+<text class="vMsg">以下时间均为当地时间</text>
+<view class="planeMsgZone" bindtouchend="checkAndBack">
+  <view class="compane">
+          {{Company}}  {{FlightNumber}}
+  </view>
+  <view class="planeMsg">  
+      <view class="detaileMsg">
+          <view class="planeTime">{{PlanStartTime}}</view>
+          <view>{{StartTerminal}}</view>
+      </view>
+      <view class="Timeto">---</view>
+        <view class="detaileMsg">
+          <view class="planeTime">{{PlanEndTime}}</view>
+          <view>{{EndTerminal}}</view>
+
+      </view>
+  </view>
+</view>

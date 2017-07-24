@@ -1,0 +1,21 @@
+<!--CouponList.wxml-->
+<!--<view class="Coupon" wx:for="{{couponList}}" wx:for-item="item">
+   
+</view>-->
+<view class="Coupon" wx:for="{{CouponList}}" wx:for-item="item" data-price="{{item.Price}}" bindtap="selectCoupon" data-code="{{item.Code}}">
+  <view class="cost">
+    ￥{{item.Price}}
+  </view>
+  <view class="content">
+    <view class="title">
+      {{item.Name}}
+    </view>
+    <view class="usecondition">
+       
+    </view>
+    <view class="dateTime">
+      {{item.Remark}}
+    </view>
+  </view>
+
+</view>

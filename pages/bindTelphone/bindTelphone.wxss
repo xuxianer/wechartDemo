@@ -1,0 +1,20 @@
+/* bindTelphone.wxss */
+.checkCode{
+  width: 56%;
+}
+.getCode{
+  width:40%;
+  display: inline-block;
+  /*line-height: 2;*/
+}
+.detail{
+  background-color: #fff;
+  display: flex;
+  width: 94%;
+  margin:1em auto; 
+  height: 3em;
+  border: 1px solid #eee;
+  justify-content:center;
+  align-items: center;
+  border-radius: 5px;
+}

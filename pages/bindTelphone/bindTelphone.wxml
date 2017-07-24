@@ -1,0 +1,10 @@
+<form bindsubmit="submit">
+<view class="detail">
+   <input placeholder="请填写手机号" name="phoneNo" bindinput="teleNo"/>
+</view>
+<view class="detail">
+   <input placeholder="请输入验证码" name="code" class="checkCode" />
+   <button class="getCode" bindtap="getCode">{{msg}}</button>
+</view>
+ <button formType="submit" class="searchBtn">提交</button>
+</form>

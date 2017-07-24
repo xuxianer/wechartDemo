@@ -1,0 +1,142 @@
+/* searchRuslt.wxss */
+.topNav{
+  height: 2.8em;
+  line-height: 2.8em;
+  border-bottom: 1px solid #eee;
+}
+.topNav text{
+  font-size: 18px;
+  margin-left: 1em;
+}
+.topNav text.on{
+  color: #3F51B5;
+}
+.all{
+  float: right;
+  margin-right: 1em;
+}
+.carList{
+  position:absolute;
+  top:7.1em;
+  bottom:3em;
+  background-color:#F2F2F2;
+
+}
+.carDTitle{
+  font-size: 18px;
+  height: 3em;
+  line-height:3em;
+  border-bottom: 1px solid #eee;
+  padding-left:1em; 
+}
+.carDTitle image{
+  width: 1em;
+  height: 1em;
+}
+.carDContent{
+  margin-top: 1em;
+}
+.carDContent image{
+    width:3em;
+    height:2em;
+    float:left;
+    margin-left:1em;
+    margin-top:.6em;
+}
+.carDesc{
+  display:inline-block;
+  width:40%;
+  margin-top:.5em;
+  font-size:14px;
+  margin-left:1em;
+  color:#999;
+  line-height:2em;
+  min-height: 3em;
+
+}
+.price{
+  margin-top:1em;
+  font-size:20px;
+  float:right;
+  margin-right:1.8em;
+  color:#E51C23;
+
+}
+.CouponPrice{
+  font-size:20px;
+  color:#E51C23;
+}
+.carDetale{
+  margin-top: 1em;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1em;
+  background-color: #fff;
+}
+
+.totlePriceAndSell{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.totlePrice{
+ float: left;
+  width: 70%;
+  color: #E51C23;
+  font-size: 20px;
+  height: 3em;
+  line-height: 3em;
+  text-align: right;
+  padding-right: 1em;
+  box-sizing: border-box;
+}
+.sell{
+  float: left;
+  width: 30%;
+  background-color: #FE6813;
+  color: #fff;
+  font-size: 20px;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+}
+
+.carstyleList{
+  position: absolute;
+  top:2.85;
+  height: 7em;
+  white-space: nowrap;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+.carStyle{
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  margin-top:1em;
+
+}
+ .carImg image{
+   width: 3em;
+   height: 2em;
+ }
+ .carStyleVN{
+   color: #999;
+   font-size: 16px;
+ }
+ .carStylePrice{
+   color: #E51C23;
+   font-size: 14px;
+ }
+ .CouPonList{
+   text-align: right;
+   padding-right: 2em;
+   color: #ccc;
+   font-size: 18px;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   height: 2.6em;
+   line-height: 2.6em;
+   background-color: #fff;
+ }

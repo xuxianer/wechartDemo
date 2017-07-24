@@ -1,0 +1,50 @@
+<!--destination.wxml-->
+<view class="section">
+<button bindtap="bindCity" class="checkCity">{{ city }}</button>
+  <input bindinput="bindInput" placeholder="搜索" focus="true" />
+</view>
+<scroll-view scroll-y="true" style="top:4em;" class="cityDetail">
+<view bindtap="bindSearch" data-keywords="{{i.name}}" class="text_box {{addshow}}" data-location="{{i.location}}" wx:for="{{tips}}" wx:for-item="i">
+  {{i.name}}
+</view>
+</scroll-view>
+<view class="cityList {{showOrhide}}">
+    <!-- <view class="rightNav">
+      <text>A</text>
+      <text>B</text>
+      <text>C</text>
+      <text>D</text>
+      <text>E</text>
+      <text>F</text>
+      <text>G</text>
+      <text>H</text>
+      <text>I</text>
+      <text>J</text>
+      <text>K</text>
+      <text>L</text>
+      <text>M</text>
+      <text>N</text>
+      <text>O</text>
+      <text>P</text>
+      <text>Q</text>
+      <text>R</text>
+      <text>S</text>
+      <text>T</text>
+      <text>U</text>
+      <text>V</text>
+      <text>W</text>
+      <text>X</text>
+      <text>Y</text>
+      <text>Z</text>
+    </view> -->
+    <scroll-view scroll-y="true" class="cityDetail">
+    
+    <view wx:for="{{cityList}}"  wx:for-item="item">
+    <view class="First" wx:if="{{item.first}}"> 
+      {{item.first}}
+    </view>
+    <view class="cityS" wx:for="{{item.airport}}" bindtap="checkCity" data-citys="{{item2.Name}}" wx:for-item="item2" data-Id="{{item2.Id}}">{{item2.Name}}</view>
+    
+    </view>
+    </scroll-view>
+</view>

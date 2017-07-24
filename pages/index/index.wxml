@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<scroll-view class="indexView">
+  <view class="Nav">
+    <text class="nav {{jjStatus}}" data-status="1" bindtap="JSJTab">接机</text>
+    <text class="nav {{sjStatus}}" data-status="2" bindtap="JSJTab">送机</text>
+  </view>
+  <scroll-view class="JSJContent" scroll-y="true">
+  <form bindsubmit="{{action}}">
+  <view class="baseMsgZone">
+   <view class="hbhView {{showOrHidden}}">
+    <image src="../../images/hbh.png"></image>
+     <view class="RowDetail" style="padding-right:3em;">
+       <image bindtouchend="clearFlightNumber" style="position:absolute;right:1em;top:0em;z-index：10;" src="../../images/ic_contacts_again@2x.png"></image>
+       <input name="planeNo" bindtouchend="InNo" disabled="true" value="{{FlightNumber}}" placeholder="请输入航班号"  style="color:#999;"/>
+    
+     </view>
+     </view>
+       <image src="../../images/sj.png"></image>
+     <view class="RowDetail">
+     
+     <view style="flex-direction:row ;display:flex;flex-wrap: nowrap;">  
+       <picker mode="date" style="width:52%" value="{{date}}" placeholder="请选择日期" name="date" bindchange="bindDateChange" start="{{dateStart}}" end="{{endDate}}">
+        <view class="picker">
+          {{date}}
+        </view>
+       </picker>
+       <text class="fenge">|</text>
+       <picker mode="time" style="width:30%" value="{{time}}" placeholder="请选择时间" name="time" bindchange="bindTimeChange">
+        <view class="picker">
+          {{time}}
+        </view>
+       </picker>
+       </view>
+     </view>
+  </view>
+  <view class="baseMsgZone">
+  <image src="../../images/qd.png"></image>
+     <view class="RowDetail" style="font-size:18px;color:#999;line-height:2em;padding-left:3.2em" bindtap="{{start}}">
+       {{EndCityName}}
+     </view>
+      <image src="../../images/zd.png"></image>
+     <view class="RowDetail" style="font-size:18px;color:#999;line-height:2em;padding-left:3.2em" bindtap="{{end}}">
+        {{addr}}
+     </view>
+  </view>
+  <view class="baseMsgZone">
+  <image src="../../images/sjh.png"></image>
+     <view class="RowDetail">
+       
+       <input name="telPhone" type="number" value="{{telphone}}" maxlength="11" disabled="{{disabled}}" placeholder="请填写乘车人联系方式" style="color:#999;"/>
+     </view>
+  </view>
+
+  <text class="cancleRule" bindtap="goRule">《预订规则》</text>
+  <button formType="submit" class="searchBtn">查询</button>
+  </form>
+</scroll-view>
+  <modal hidden="false" title="领取30元首单优惠券" confirm-text="领取" cancel-text="不领取" bindcancel="cancel" bindconfirm="confirm" data-telphone="{{telphone}}" >
+    <input value="{{telphone}}" name="telphone" type="number" maxlength="11" bindblur="getTel" placeholder="请填写乘车人手机号" placeholder-class="placeholder"/>
+</modal>
+</scroll-view>

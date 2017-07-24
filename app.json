@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Destination/destination",
+    "pages/planeNo/planeNo",
+    "pages/searchPlaneRes/searchPlaneRes",
+    "pages/airPort/airPort",
+    "pages/searchRuslt/searchRuslt",
+    "pages/CouponList/CouponList",
+    "pages/orderdetail/orderdetail",
+    "pages/orderIndex/orderIndex",
+    "pages/bindTelphone/bindTelphone",
+    "pages/cancelrule/cancelrule"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "阳光用车",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#fe6813",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "selectedIconPath": "images/jsj.png",
+        "iconPath": "images/jsjh.png",
+        "pagePath": "pages/index/index",
+        "text": "接送机"
+      },
+      {
+        "selectedIconPath": "images/ddc.png",
+        "iconPath": "images/ddh.png",
+        "pagePath": "pages/orderIndex/orderIndex",
+        "text": "我的订单"
+      }
+    ]
+  }
+}
